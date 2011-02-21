@@ -16,6 +16,15 @@ public class MockitoSmokeTest {
 	 }
 	
 	
+	 
+	@Test
+	public void discoverNewImpl(){
+		
+		
+		
+	}
+	 
+	 
 	@Test
 	public void testThatTheMockDoesWhatIExpect(){
 		MyInterface myType = mock(MyInterface.class);
@@ -25,11 +34,9 @@ public class MockitoSmokeTest {
 		assertEquals( actual ,"bar"  );
 	}
 	
-
 	
 	@Test
 	public void smoke(){}
-
 
 
 }
