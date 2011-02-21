@@ -1,0 +1,1 @@
+This project contains all my notes, source code, presentations, etc. from the 2010 TDD seminar at GMU.
