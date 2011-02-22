@@ -2,25 +2,23 @@ package edu.gmu.tdd;
 
 public class Recipient {
 
-	public Recipient(String string, String string2) {
-		// TODO Auto-generated constructor stub
+	String name;
+	String email;
+	
+	public Recipient(String name, String email) {
+      this.name = name;
+      this.email = email;
+	
 	}
 
-	
-	public static void main(String[] args){
+	public Object getName() {
+		return this.name;
+	}
+
+	public Object getEmail() {
+		return this.email;
+	}
+
 		
-		System.out.print("asd");
-	}
-	
-	
-	
-	public boolean ifSomething(int num){
-		boolean retVal = false;
-		if(num > 0){
-			retVal = true;
-		}
-		return retVal;
-	}
-	
 
 }
