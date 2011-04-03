@@ -95,8 +95,6 @@ public class EmailerTest {
 		EmailService mockService = mock(EmailService.class);
 		
 		//Inject emailer with mock
-		//emailer.setEmailService( mockService );
-		
 		emailer.setEmailService(mockService);
 		
 		//exercise object under test
