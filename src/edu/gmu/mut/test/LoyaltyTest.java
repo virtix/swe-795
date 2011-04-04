@@ -55,7 +55,7 @@ public class LoyaltyTest extends BaseTest {
 		ArrayList<Purchase> purchases = new ArrayList<Purchase>();
 		purchases.add(p);
 		Account account = Account.newInstance( "ed", "ed@ed.com", new GregorianCalendar(2009,2,1),new GregorianCalendar(), purchases );
-		BigDecimal amt = Loyalty.getDiscountAmount(account, new GregorianCalendar());
+		BigDecimal amt = Loyalty.getDiscountAmount(account, new GregorianCalendar(2011, Calendar.APRIL,3));
 		String result = perFmt.format(amt.doubleValue());
 		assertEquals( "20%" , result  );
 	}

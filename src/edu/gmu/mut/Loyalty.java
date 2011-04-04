@@ -15,23 +15,24 @@ public final class Loyalty {
 
 	
 	
-	//TO DO: Still need to add date constraints!
+	// TO DO: Still need to add date constraints!
+	// Compute the total amount spent in given constraint
 	public static BigDecimal getDiscountAmount(Account account, Calendar startDate) {
 		
 		BigDecimal discount = new BigDecimal(0);
 		
 		double total = getTotalPurchases(account).doubleValue(); 
 	
-		if(  total >= 50 && total < 100  ){
+		if(  total >= 50 && total < 100 ){
 			discount = new BigDecimal(0.10);
 		}
-		else if(total == 0){ //DATE? New Users?
+		else if(total == 0 ){ //DATE? New Users?
 			discount = new BigDecimal(0.15);
 		}
-		else if (total >= 100){ //DATE? 
+		else if (total >= 100 ){ //DATE? 
 			discount = new BigDecimal(0.20);
 		}
-		else if (total >= 25 && total < 50){ //DATE? 
+		else if (total >= 25 && total < 50 ){ //DATE? 
 			discount = new BigDecimal(0.10);
 		}
 		else {
