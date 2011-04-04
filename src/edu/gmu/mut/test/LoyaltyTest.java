@@ -10,12 +10,23 @@ import edu.gmu.mut.Purchase;
 import java.math.BigDecimal;
 import java.text.*;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class LoyaltyTest extends BaseTest {
 
 	NumberFormat curFmt = NumberFormat.getCurrencyInstance();
 	NumberFormat perFmt = NumberFormat.getPercentInstance();
+	
+	@Test
+	public void calcDayDelta(){
+		Calendar regDate = new GregorianCalendar( 2010, Calendar.MAY, 5 );
+		Calendar   today = new GregorianCalendar( 2011, Calendar.APRIL, 4 );
+		long actualDiff = Loyalty.computeDeltaDays( today, regDate );
+		//-----------------------------
+		assertEquals( 334, actualDiff );
+	}
+
 	
 	@Test
 	public void dateCompareTestSpike(){
@@ -26,23 +37,25 @@ public class LoyaltyTest extends BaseTest {
 	
 	
 	@Test
-	public void usersWhoHaveSpent25To50Get5Percent(){
+	public void usersWhoHaveSpent25To50InLastYearGet5Percent(){
 		Purchase p =  new Purchase("Coltrane", new BigDecimal(29.99), new GregorianCalendar() );
+		Calendar today  = new GregorianCalendar( 2011, Calendar.APRIL, 3 );
+		
 		ArrayList<Purchase> purchases = new ArrayList<Purchase>();
 		purchases.add(p);
 		Account account = Account.newInstance( "ed", "ed@ed.com", new GregorianCalendar(2009,2,1),new GregorianCalendar(), purchases );
-		BigDecimal amt = Loyalty.getDiscountAmount(account);
+		BigDecimal amt = Loyalty.getDiscountAmount(account, today);
 		String result = perFmt.format(amt.doubleValue());
-		assertEquals( "5%" , result  );
+		assertEquals( "10%" , result  );
 	}
 	
 	@Test
-	public void usersWhoHaveSpent100OrMoreGet20Percent(){
+	public void usersWhoHaveSpent100OorMoreInLastYearGet20Percent(){
 		Purchase p =  new Purchase("Coltrane", new BigDecimal(199.99), new GregorianCalendar() );
 		ArrayList<Purchase> purchases = new ArrayList<Purchase>();
 		purchases.add(p);
 		Account account = Account.newInstance( "ed", "ed@ed.com", new GregorianCalendar(2009,2,1),new GregorianCalendar(), purchases );
-		BigDecimal amt = Loyalty.getDiscountAmount(account);
+		BigDecimal amt = Loyalty.getDiscountAmount(account, new GregorianCalendar());
 		String result = perFmt.format(amt.doubleValue());
 		assertEquals( "20%" , result  );
 	}
@@ -50,7 +63,7 @@ public class LoyaltyTest extends BaseTest {
 	@Test
 	public void newUsersWhoHaveNotMadePurchasesShouldGet15Percent(){
 		Account account = Account.newInstance( "ed", "ed@ed.com", new GregorianCalendar(),new GregorianCalendar(), new ArrayList<Purchase>() );
-		BigDecimal amt = Loyalty.getDiscountAmount(account);
+		BigDecimal amt = Loyalty.getDiscountAmount(account, new GregorianCalendar());
 		String result = perFmt.format(amt.doubleValue());
 		assertEquals( "15%" , result  );
 	}
@@ -58,7 +71,7 @@ public class LoyaltyTest extends BaseTest {
 	@Test
 	public void discountForBasicUserShouldBe10Percent(){
 		Account account = AccountFixture.getBasicAccount();
-		BigDecimal amt = Loyalty.getDiscountAmount(account);
+		BigDecimal amt = Loyalty.getDiscountAmount(account, new GregorianCalendar());
 		String result = perFmt.format(amt.doubleValue());
 		logger.info(result);
 		assertEquals( "10%" , result  );

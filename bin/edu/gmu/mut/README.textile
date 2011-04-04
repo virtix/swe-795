@@ -9,7 +9,7 @@ Rules (all these apply to the total amount of the next purchase):
 * If the user's account is more than 30 days old, and they have not made any purchases, and they have visited the site in the last week, give them a 10% discount.
 * If the user has purchased more than $100 within the last year, give them a 20% discount.
 * If the user has purchased more than $50 but less than $100 within the last year, give them a 15% discount.
-* If the user has purchased between $25 and $50 with the past year, give them a 10% discount.
+* If the user has purchased between $25 and $50 within the last year, give them a 10% discount.
 * For all other existing users who have purchased anything within the last 2 years, give them a 5% discount.
 * If the user has referred 5-10 new customers, they get an additional 5% discount.
 

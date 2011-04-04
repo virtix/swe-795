@@ -1,6 +1,7 @@
 package edu.gmu.mut;
 
 import java.math.BigDecimal;
+import java.util.Calendar;
 
 public final class Loyalty {
 
@@ -15,7 +16,7 @@ public final class Loyalty {
 	
 	
 	//TO DO: Still need to add date constraints!
-	public static BigDecimal getDiscountAmount(Account account) {
+	public static BigDecimal getDiscountAmount(Account account, Calendar startDate) {
 		
 		BigDecimal discount = new BigDecimal(0);
 		
@@ -24,19 +25,31 @@ public final class Loyalty {
 		if(  total >= 50 && total < 100  ){
 			discount = new BigDecimal(0.10);
 		}
-		else if(total == 0){ //DATE?
+		else if(total == 0){ //DATE? New Users?
 			discount = new BigDecimal(0.15);
 		}
 		else if (total >= 100){ //DATE? 
 			discount = new BigDecimal(0.20);
 		}
 		else if (total >= 25 && total < 50){ //DATE? 
+			discount = new BigDecimal(0.10);
+		}
+		else {
 			discount = new BigDecimal(0.05);
 		}
 		
 		
 		
 		return discount;
+	}
+
+
+
+	public static long computeDeltaDays(Calendar today, Calendar regDate) {
+		long today_ms = today.getTimeInMillis();
+		long reg_ms = regDate.getTimeInMillis();
+		long diff_days = (today_ms-reg_ms) / (24 * 60 * 60 * 1000);
+		return diff_days;
 	}
 
 	
