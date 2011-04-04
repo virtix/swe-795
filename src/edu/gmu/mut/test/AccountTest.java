@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import edu.gmu.mut.Account;
@@ -34,9 +33,6 @@ public class AccountTest extends BaseTest {
 		assertEquals( visitDate, account.getLastVisitDate() );
 	    logger.info( DateFormat.getInstance().format( regDate.getTime() ) );
 	}
-	
-	
-	
 	
 	
 	
