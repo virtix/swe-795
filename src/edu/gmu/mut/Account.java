@@ -34,12 +34,13 @@ public class Account {
 	
 	private Account(){}
 	
-	public static Account newInstance(String name, String email, Calendar dateRegistered, Calendar lastVisitDate) {
+	public static Account newInstance(String name, String email, Calendar dateRegistered, Calendar lastVisitDate, ArrayList<Purchase> purchases) {
 		Account accnt = new Account();
 		accnt.name = name;
 		accnt.email = email;
 		accnt.dateRegistered = dateRegistered;
 		accnt.dateOfLastVisit = lastVisitDate;
+		accnt.purchaseHistory = purchases;
 		return accnt;
 	}
 
