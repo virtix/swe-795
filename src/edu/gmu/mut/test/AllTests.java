@@ -8,7 +8,8 @@ import  org.junit.runners.Suite;
 @Suite.SuiteClasses( { PurchaseTest.class,
 					   AccountTest.class,
 					   LoyaltyTest.class,
-					   SpikesTest.class
+					   SpikesTest.class,
+					   DateSpikeTest.class
 					  } )
 					  
 public class AllTests {}

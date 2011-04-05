@@ -6,7 +6,7 @@ import org.apache.log4j.BasicConfigurator;
 import org.junit.Test;
 
 
-public class BaseTest {
+public abstract class BaseTest {
 
 	Logger logger = Logger.getLogger(this.getClass().getName());
 	{ 

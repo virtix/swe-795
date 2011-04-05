@@ -21,12 +21,9 @@ public class DateSpikeTest extends BaseTest {
 		
 		long diff_days = (today_ms-reg_ms) / (24 * 60 * 60 * 1000); 
 		
-//		Calendar diff = new Gre
-		
-		System.out.println ( diff_days );
+		logger.info( String.valueOf(diff_days) );
 		
 		assertEquals( 334, diff_days );
-		
 		
 	}
 	
