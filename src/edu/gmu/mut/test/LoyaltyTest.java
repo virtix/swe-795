@@ -17,53 +17,47 @@ public class LoyaltyTest extends BaseTest {
 
 	NumberFormat curFmt = NumberFormat.getCurrencyInstance();
 	NumberFormat perFmt = NumberFormat.getPercentInstance();
+	Calendar today = new GregorianCalendar( 2011, Calendar.APRIL, 1 );
 	
-	@Test
-	public void calcDayDelta(){
-		Calendar regDate = new GregorianCalendar( 2010, Calendar.MAY, 5 );
-		Calendar   today = new GregorianCalendar( 2011, Calendar.APRIL, 4 );
-		long actualDiff = Loyalty.computeDeltaDays( today, regDate );
-		//-----------------------------
-		assertEquals( 334, actualDiff );
-	}
 
-	
 	@Test
-	public void dateCompareTestSpike(){
-		GregorianCalendar cal1 = new GregorianCalendar(2010,1,1);
-		GregorianCalendar cal2 = new GregorianCalendar();
-    	  assertTrue( cal1.before(cal2) );
-	}
-	
-	
-	@Test
-	public void usersWhoHaveSpent25To50InLastYearGet5Percent(){
-		Purchase p =  new Purchase("Coltrane", new BigDecimal(29.99), new GregorianCalendar() );
+	public void onTheFenceUsersShouldGet10PercentOff(){
 		Calendar today  = new GregorianCalendar( 2011, Calendar.APRIL, 3 );
-		
 		ArrayList<Purchase> purchases = new ArrayList<Purchase>();
-		purchases.add(p);
-		Account account = Account.newInstance( "ed", "ed@ed.com", new GregorianCalendar(2009,2,1),new GregorianCalendar(), purchases );
+		Account account = Account.newInstance( "ed", "ed@ed.com", new GregorianCalendar(2009,Calendar.FEBRUARY,14),today, purchases );
 		BigDecimal amt = Loyalty.getDiscountAmount(account, today);
 		String result = perFmt.format(amt.doubleValue());
 		assertEquals( "10%" , result  );
 	}
 	
 	@Test
-	public void usersWhoHaveSpent100OorMoreInLastYearGet20Percent(){
-		Purchase p =  new Purchase("Coltrane", new BigDecimal(199.99), new GregorianCalendar() );
+	public void usersWhoHaveSpent25To50InLastYearGet10Percent(){
+		Purchase p =  new Purchase("Coltrane", new BigDecimal(29.99), new GregorianCalendar() );
+		Calendar today  = new GregorianCalendar( 2011, Calendar.APRIL, 3 );
+		
 		ArrayList<Purchase> purchases = new ArrayList<Purchase>();
 		purchases.add(p);
-		Account account = Account.newInstance( "ed", "ed@ed.com", new GregorianCalendar(2009,2,1),new GregorianCalendar(), purchases );
-		BigDecimal amt = Loyalty.getDiscountAmount(account, new GregorianCalendar(2011, Calendar.APRIL,3));
+		Account account = Account.newInstance( "ed", "ed@ed.com", new GregorianCalendar(2009,Calendar.FEBRUARY,14),new GregorianCalendar(), purchases );
+		BigDecimal amt = Loyalty.getDiscountAmount(account, today);
+		String result = perFmt.format(amt.doubleValue());
+		assertEquals( "10%" , result  );
+	}
+	
+	@Test
+	public void usersWhoHaveSpent100OrMoreInLastYearGet20Percent(){
+		Purchase p =  new Purchase("Coltrane", new BigDecimal(199.99),  new GregorianCalendar(2010,Calendar.MAY,5) );
+		ArrayList<Purchase> purchases = new ArrayList<Purchase>();
+		purchases.add(p);
+		Account account = Account.newInstance( "ed", "ed@ed.com", new GregorianCalendar(2009,Calendar.FEBRUARY,14), new GregorianCalendar(), purchases );
+		BigDecimal amt = Loyalty.getDiscountAmount(account, today);
 		String result = perFmt.format(amt.doubleValue());
 		assertEquals( "20%" , result  );
 	}
 	
 	@Test
 	public void newUsersWhoHaveNotMadePurchasesShouldGet15Percent(){
-		Account account = Account.newInstance( "ed", "ed@ed.com", new GregorianCalendar(),new GregorianCalendar(), new ArrayList<Purchase>() );
-		BigDecimal amt = Loyalty.getDiscountAmount(account, new GregorianCalendar());
+		Account account = AccountFixture.getNewAccount();
+		BigDecimal amt = Loyalty.getDiscountAmount(account, today);
 		String result = perFmt.format(amt.doubleValue());
 		assertEquals( "15%" , result  );
 	}
@@ -79,22 +73,11 @@ public class LoyaltyTest extends BaseTest {
 	
 	
 	@Test
-	public void testSimpleCreateLoyaltyDiscount(){
+	public void fetchTotalPurchasesFromAnAccount(){
 		Account account = AccountFixture.getBasicAccount();
 		BigDecimal amt = Loyalty.getTotalPurchases(account);
 		String result = curFmt.format(amt.doubleValue()) ; 
-		assertEquals( "$64.88" , result  );
+		assertEquals( "$67.86" , result  );
 	}
-
-	@Test
-	public void bigDecimalSpike(){
-		BigDecimal amt1 = new BigDecimal(0.99);
-		BigDecimal amt2 = new BigDecimal(0.01);
-		BigDecimal tot = amt1.add(amt2);
-		String result = curFmt.format(tot.doubleValue());
-	    logger.info( result );
-	    assertEquals( "$1.00" , result );
-	}
-	
 
 }

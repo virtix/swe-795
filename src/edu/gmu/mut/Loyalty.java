@@ -5,6 +5,9 @@ import java.util.Calendar;
 
 public final class Loyalty {
 
+	
+	
+	
 	public static BigDecimal getTotalPurchases(Account account) {
 		BigDecimal total = new BigDecimal(0);
 		for(Purchase p : account.getPurchaseHistory()){
@@ -15,42 +18,67 @@ public final class Loyalty {
 
 	
 	
-	// TO DO: Still need to add date constraints!
-	// Compute the total amount spent in given constraint
 	public static BigDecimal getDiscountAmount(Account account, Calendar startDate) {
 		
 		BigDecimal discount = new BigDecimal(0);
+		Calendar regDate = account.getDateRegistered();
 		
+//		double monthlyTotal = getTotalPurchasesBetweenNowAndNDays(account, startDate,30).doubleValue();
+		double annualTotal = getTotalPurchasesBetweenNowAndNDays(account, startDate,365).doubleValue();
+		double twoYearTotal = getTotalPurchasesBetweenNowAndNDays(account, startDate,365*2).doubleValue();
 		double total = getTotalPurchases(account).doubleValue(); 
 	
-		if(  total >= 50 && total < 100 ){
+		//one year rule
+		total = getTotalPurchasesBetweenNowAndNDays(account, startDate,365).doubleValue();
+		
+		if(  annualTotal >= 50 && annualTotal < 100 ){
 			discount = new BigDecimal(0.10);
 		}
-		else if(total == 0 ){ //DATE? New Users?
+		//new user rule
+		else if(total == 0 && computeDeltaDays(startDate, regDate) <= 30  ){
 			discount = new BigDecimal(0.15);
 		}
-		else if (total >= 100 ){ //DATE? 
+		//big spender
+		else if (annualTotal >= 100  ){
 			discount = new BigDecimal(0.20);
 		}
-		else if (total >= 25 && total < 50 ){ //DATE? 
+		//25-50 annual
+		else if (annualTotal >= 25 && annualTotal < 50 ){
 			discount = new BigDecimal(0.10);
 		}
+		//2 year rule
+		else if (twoYearTotal > 0 ){
+			discount = new BigDecimal(0.5);
+		}
+		else if (total == 0 && computeDeltaDays(startDate,account.getLastVisitDate()) <= 7 ){
+			discount = new BigDecimal(0.10);
+		}
+		//default
 		else {
 			discount = new BigDecimal(0.05);
 		}
-		
-		
-		
 		return discount;
 	}
 
 
 
-	public static long computeDeltaDays(Calendar today, Calendar regDate) {
+	
+	public static long computeDeltaDays(Calendar today, Calendar targetDate) {
 		long today_ms = today.getTimeInMillis();
-		long reg_ms = regDate.getTimeInMillis();
+		long reg_ms = targetDate.getTimeInMillis();
 		long diff_days = (today_ms-reg_ms) / (24 * 60 * 60 * 1000);
 		return diff_days;
+	}
+
+
+	
+
+	public static BigDecimal getTotalPurchasesBetweenNowAndNDays( Account account, Calendar today, int numberOfDays) {
+		BigDecimal total = new BigDecimal(0);	
+		for(Purchase p : account.getPurchaseHistory()){
+			 if (computeDeltaDays(today, p.purchaseDate) <= numberOfDays )total = p.price.add(total);
+		}
+		return total;
 	}
 
 	

@@ -10,14 +10,38 @@ import edu.gmu.mut.Purchase;
 
 public class AccountFixture {
 
-	public static Account getBasicAccount(){
-		
+	
+	public static Account get100DollarSpenderAccount(){
 		Calendar regDate;
 		Calendar visitDate;
-		Account account;
 		ArrayList<Purchase> purchases ;
-		
 		purchases = new ArrayList<Purchase>();
+		Purchase p = new Purchase("Blues", new BigDecimal(100.00), new GregorianCalendar(2010,Calendar.NOVEMBER,24));
+		purchases.add(p);
+		regDate = new GregorianCalendar(2011,Calendar.MARCH,15);
+		visitDate = new GregorianCalendar(2011,Calendar.MARCH,20);
+		return Account.newInstance("100$_bill", "100$_bill@if.io", regDate, visitDate, purchases );
+	}
+	
+	public static Account getNewAccount(){
+		Calendar regDate;
+		Calendar visitDate;
+		ArrayList<Purchase> purchases ;
+		purchases = new ArrayList<Purchase>();
+		regDate = new GregorianCalendar(2011,Calendar.MARCH,15);
+		visitDate = new GregorianCalendar(2011,Calendar.MARCH,20);
+		return Account.newInstance("new bill", "new_bill@if.io", regDate, visitDate, purchases );
+	}
+
+	
+	
+	public static Account getBasicAccount(){
+		Calendar regDate;
+		Calendar visitDate;
+		ArrayList<Purchase> purchases ;
+		purchases = new ArrayList<Purchase>();
+		purchases.add( new Purchase("Reggae", new BigDecimal( .99), new GregorianCalendar(2011, Calendar.MARCH, 5)  ));
+		purchases.add( new Purchase("Reggae", new BigDecimal( 1.99), new GregorianCalendar(2011, Calendar.MARCH, 5)  ));
 		purchases.add( new Purchase("Jazz", new BigDecimal( 9.99), new GregorianCalendar(2011, Calendar.JANUARY, 5)  ));
 		purchases.add( new Purchase("Jazz", new BigDecimal(4.99), new GregorianCalendar(2010, Calendar.FEBRUARY, 4)  ));
 		purchases.add( new Purchase("Punk", new BigDecimal(1.99), new GregorianCalendar(2010, Calendar.MARCH, 4) ));

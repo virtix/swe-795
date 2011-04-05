@@ -8,9 +8,9 @@ import java.util.GregorianCalendar;
 
 public class Purchase {
       
-	String item;
-	BigDecimal price;
-	Calendar purchaseDate;
+	final String item;
+	final BigDecimal price;
+	final Calendar purchaseDate;
 	
 	public Purchase(String item, BigDecimal price, GregorianCalendar purchaseDate ) {
 		this.item = item;

@@ -5,12 +5,11 @@ This program will compute a discount to customers based on certain business rule
 Assume a customer with the following information: Name, email, date registered, last visit date, and a purchase history which contains item,date,price
 
 Rules (all these apply to the total amount of the next purchase):
-* If the user is brand new, that is, the account has been created less than 30 days ago and has not made a purchase, give that person a 15% discount.
-* If the user's account is more than 30 days old, and they have not made any purchases, and they have visited the site in the last week, give them a 10% discount.
-* If the user has purchased more than $100 within the last year, give them a 20% discount.
-* If the user has purchased more than $50 but less than $100 within the last year, give them a 15% discount.
-* If the user has purchased between $25 and $50 within the last year, give them a 10% discount.
-* For all other existing users who have purchased anything within the last 2 years, give them a 5% discount.
-* If the user has referred 5-10 new customers, they get an additional 5% discount.
+1. If the user is brand new, that is, the account has been created less than 30 days ago and has not made a purchase, give that person a 15% discount.
+2. If the user's account is more than 30 days old, and they have not made any purchases, and they have visited the site in the last week, give them a 10% discount.
+3. If the user has purchased more than $100 within the last year, give them a 20% discount.
+4. If the user has purchased more than $50 but less than $100 within the last year, give them a 15% discount.
+5 If the user has purchased between $25 and $50 within the last year, give them a 10% discount.
+6. For all other existing users who have purchased anything within the last 2 years, give them a 5% discount.
 
 
