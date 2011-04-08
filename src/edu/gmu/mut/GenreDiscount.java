@@ -14,8 +14,7 @@ public class GenreDiscount extends Discount {
 	 * @param string the string
 	 * @return the genre discount
 	 */
-	public static BigDecimal getGenreDiscount(Account account, Calendar today,
-			String string) {
+	public static BigDecimal getGenreDiscount(Account account, Calendar today,	String string) {
 		return new BigDecimal(.2);
 	}
 

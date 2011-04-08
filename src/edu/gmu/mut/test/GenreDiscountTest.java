@@ -24,7 +24,7 @@ public class GenreDiscountTest extends BaseTest {
 	
 	
 	@Test
-	public void reggaeGets15PercentIfPurchasedInLastMonth(){
+	public void reggaeGets20PercentIfPurchasedInLastMonth(){
 		Account account = AccountFixture.getBasicAccount(); //purchased reggae in last
 		BigDecimal actual = GenreDiscount.getGenreDiscount(account, today, "Reggae");
 		assertEquals( "20%" , perFmt.format(actual.doubleValue()) );

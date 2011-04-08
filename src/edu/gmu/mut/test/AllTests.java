@@ -9,7 +9,8 @@ import  org.junit.runners.Suite;
 					   AccountTest.class,
 					   LoyaltyDiscountTest.class,
 					   SpikesTest.class,
-					   DateSpikeTest.class
+					   DateSpikeTest.class,
+					   GenreDiscountTest.class
 					  } )
 					  
 public class AllTests {}
