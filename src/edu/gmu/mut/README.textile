@@ -12,4 +12,6 @@ Rules (all these apply to the total amount of the next purchase):
 5 If the user has purchased between $25 and $50 within the last year, give them a 10% discount.
 6. For all other existing users who have purchased anything within the last 2 years, give them a 5% discount.
 
-
+New Rules for Genres
+1. If a user has purchased at least $10 worth of Jazz or Reggae in the last month, they get a 20% discount
+2. If a user has purchased at least $20 worth of Rock in the last month, they get a 15% discount

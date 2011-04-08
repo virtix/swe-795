@@ -3,13 +3,10 @@ package edu.gmu.mut.test;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import edu.gmu.mut.Account;
-import edu.gmu.mut.Loyalty;
-import edu.gmu.mut.Purchase;
+import edu.gmu.mut.LoyaltyDiscount;
 
 import java.math.BigDecimal;
 import java.text.*;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -24,7 +21,7 @@ public class SpikesTest extends BaseTest {
 	public void calcDayDelta(){
 		Calendar regDate = new GregorianCalendar( 2010, Calendar.MAY, 5 );
 		Calendar   today = new GregorianCalendar( 2011, Calendar.APRIL, 4 );
-		long actualDiff = Loyalty.computeDeltaDays( today, regDate );
+		long actualDiff = LoyaltyDiscount.computeDeltaDays( today, regDate );
 		assertEquals( 334, actualDiff );
 	}
 

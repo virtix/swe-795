@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="billy-laptop" name="edu.gmu.mut.test.AllTests" tests="0" time="7.851" timestamp="2011-04-07T00:55:47">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="lib.dir" value="/home/billy/workspace/javalanche-0.3.6/lib/" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler" />
+    <property name="ant.file.mutation-include" value="/home/billy/workspace/javalanche-0.3.6/src/main/resources/coverage-include.xml" />
+    <property name="run.mutations.verbose" value="-verbose" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-openjdk/jre/lib/resources.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jsse.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jce.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/charsets.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/netx.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/plugin.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rhino.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-openjdk/jre/classes" />
+    <property name="scan.project.memory" value="-Xmx2048m" />
+    <property name="javalanche.maxmemory" value="2048m" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="/home/billy/programs/eclipse-3.6/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145" />
+    <property name="java.runtime.version" value="1.6.0_20-b20" />
+    <property name="scan.javalanche.project.test.suite" value="-Dmutation.test.suite=edu.gmu.mut.test.AllTests" />
+    <property name="mutation.test.suite" value="edu.gmu.mut.test.AllTests" />
+    <property name="user.name" value="billy" />
+    <property name="project.prefix" value="edu" />
+    <property name="user.language" value="en" />
+    <property name="field.file" value="invariant-files//field-results.ser" />
+    <property name="javalanche.properties.add" value=" " />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-openjdk/jre/lib/amd64" />
+    <property name="proj.shortname" value="jvl-mu" />
+    <property name="run.mutations.mutation.javaagent" value="-javaagent:/home/billy/workspace/javalanche-0.3.6/javaagent.jar" />
+    <property name="run.mutations.listener" value="-Djavalanche.mutation.test.listener=de.unisb.cs.st.javalanche.mutation.runtime.jmx.JmxMutationTestListener" />
+    <property name="javalanche" value="/home/billy/workspace/javalanche-0.3.6" />
+    <property name="scan.project.mutation.javaagent" value="-javaagent:/home/billy/workspace/javalanche-0.3.6/javaagent.jar" />
+    <property name="ant.project.name" value="Javalanche - Mutation Testing" />
+    <property name="java.version" value="1.6.0_20" />
+    <property name="user.timezone" value="" />
+    <property name="javalanche.single.task.mode" value="true" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="javalanche.test.base.dir" value="." />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-openjdk/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="ant.file.javalanche-import" value="/home/billy/workspace/javalanche-0.3.6/import.xml" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="classes.add" value="" />
+    <property name="cp" value="/home/billy/workspace/swe795-tdd/bin" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="US" />
+    <property name="single.task.mode" value="true" />
+    <property name="java.home" value="/usr/lib/jvm/java-6-openjdk/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="adabu2.resultfilename" value="invariant-files//edu-trace.out" />
+    <property name="ant.file" value="/home/billy/workspace/swe795-tdd/src/edu/javalanche.xml" />
+    <property name="os.version" value="2.6.32-30-generic" />
+    <property name="ant.file.javalanche-include" value="/home/billy/workspace/javalanche-0.3.6/src/main/resources/mutation-build.xml" />
+    <property name="run.mutations.mutation.file" value="-Dmutation.file=${mutation.file}" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="19.0-b09" />
+    <property name="javalanche.mutation.javaagent" value="/home/billy/workspace/javalanche-0.3.6/javaagent.jar" />
+    <property name="scan.project.javalanche.project.test.suite" value="-Dmutation.test.suite=edu.gmu.mut.test.AllTests" />
+    <property name="invariant.dir" value="invariant-files/" />
+    <property name="mutation.package.prefix" value="edu" />
+    <property name="ant.library.dir" value="/home/billy/programs/eclipse-3.6/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib" />
+    <property name="mutation.file" value="${mutation.file}" />
+    <property name="scan.bootclasspath" value="-Xbootclasspath/a:/home/billy/workspace/javalanche-0.3.6/javalanche-mutation-bootclasspath.jar" />
+    <property name="javalanche.dist.dir" value="/home/billy/workspace/javalanche-0.3.6" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="run.mutations.mutation.run.mode" value="-Dmutation.run.mode=mutation" />
+    <property name="project.test.suite" value="edu.gmu.mut.test.AllTests" />
+    <property name="scan.javalanche.package.prefix" value="-Dmutation.package.prefix=edu" />
+    <property name="javalanche.arg.line" value="  -javaagent:/home/billy/workspace/javalanche-0.3.6/javaagent.jar -Xmx2048m -Dmutation.run.mode=mutation -Dmutation.package.prefix=edu -Dmutation.test.suite=edu.gmu.mut.test.AllTests -Dmutation.file=${mutation.file} -Dmutation.result.file=result-${mutation.file} -Djavalanche.mutation.test.listener=de.unisb.cs.st.javalanche.mutation.runtime.jmx.JmxMutationTestListener -Djavalanche.single.task.mode=true" />
+    <property name="user.home" value="/home/billy" />
+    <property name="scan.memory" value="-Xmx2048m" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="run.mutations.memory" value="-Xmx2048m" />
+    <property name="java.library.path" value="/usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/lib64/xulrunner-addons:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="javalanche.mutation.output.dir" value="/home/billy/workspace/swe795-tdd/src/edu/mutation-files" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.version" value="Apache Ant version 1.7.1 compiled on June 27 2008" />
+    <property name="java.class.path" value="/home/billy/workspace/javalanche-0.3.6/src/main/resources:/home/billy/workspace/javalanche-0.3.6/lib/adabu2-core-0.4-SNAPSHOT.jar:/home/billy/workspace/javalanche-0.3.6/lib/adabu2-hoare-0.4-SNAPSHOT.jar:/home/billy/workspace/javalanche-0.3.6/lib/adabu2-tracer-0.4-modified.jar:/home/billy/workspace/javalanche-0.3.6/lib/antlr-2.7.6.jar:/home/billy/workspace/javalanche-0.3.6/lib/asm-3.0.jar:/home/billy/workspace/javalanche-0.3.6/lib/asm-all-3.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/asm-commons-3.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/asm-tree-3.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/asm-util-3.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/bytecodeTransformer-0.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/c3p0-0.9.1.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/cglib-2.1_3.jar:/home/billy/workspace/javalanche-0.3.6/lib/commons-collections-3.2.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/commons-io-1.4.jar:/home/billy/workspace/javalanche-0.3.6/lib/commons-lang-2.3.jar:/home/billy/workspace/javalanche-0.3.6/lib/commons-logging-1.0.4.jar:/home/billy/workspace/javalanche-0.3.6/lib/dom4j-1.6.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/ds-util-0.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/easymock-2.3.jar:/home/billy/workspace/javalanche-0.3.6/lib/ehcache-1.2.3.jar:/home/billy/workspace/javalanche-0.3.6/lib/freemarker-2.3.4.jar:/home/billy/workspace/javalanche-0.3.6/lib/google-collect-snapshot-20080530.jar:/home/billy/workspace/javalanche-0.3.6/lib/hamcrest-all-1.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/hibernate-3.2.2.ga.jar:/home/billy/workspace/javalanche-0.3.6/lib/hibernate-annotations-3.3.0.ga.jar:/home/billy/workspace/javalanche-0.3.6/lib/hibernate-commons-annotations-3.3.0.ga.jar:/home/billy/workspace/javalanche-0.3.6/lib/hibernate-tools-3.2.0.beta9a.jar:/home/billy/workspace/javalanche-0.3.6/lib/hsqldb-1.8.0.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/invariants-0.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/j2h-1.3.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/javalanche-mutation-0.3.6.jar:/home/billy/workspace/javalanche-0.3.6/lib/jgrapht-jdk1.5-0.7.3.jar:/home/billy/workspace/javalanche-0.3.6/lib/jta-1.0.1B.jar:/home/billy/workspace/javalanche-0.3.6/lib/jtidy-r8-20060801.jar:/home/billy/workspace/javalanche-0.3.6/lib/junit-4.7.jar:/home/billy/workspace/javalanche-0.3.6/lib/log4j-1.2.14.jar:/home/billy/workspace/javalanche-0.3.6/lib/mysql-connector-java-nightly.jar:/home/billy/workspace/javalanche-0.3.6/lib/persistence-api-1.0.jar:/home/billy/workspace/javalanche-0.3.6/lib/prefuse-beta-20060220.jar:/home/billy/workspace/javalanche-0.3.6/lib/sibrelib-local.jar:/home/billy/workspace/javalanche-0.3.6/lib/util-0.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/xpp3_min-1.1.3.4.O.jar:/home/billy/workspace/javalanche-0.3.6/lib/xstream-1.2.2.jar:/home/billy/workspace/swe795-tdd/bin:/home/billy/programs/eclipse-3.6/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-launcher.jar:/home/billy/programs/eclipse-3.6/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant.jar:/home/billy/programs/eclipse-3.6/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-junit.jar:/home/billy/workspace/javalanche-0.3.6/javaagent.jar" />
+    <property name="mutation.run.mode" value="mutation" />
+    <property name="run.mutations.single.task.mode" value="-Djavalanche.single.task.mode=true" />
+    <property name="javalanche.junit4" value="true" />
+    <property name="ant.file.additionalTasks" value="/home/billy/workspace/javalanche-0.3.6/src/main/resources/mutation-add-tasks.xml" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="scan.project.javalanche.package.prefix" value="-Dmutation.package.prefix=edu" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="javalanche.jars.dir" value="/home/billy/workspace/javalanche-0.3.6/lib" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="javalanche.invariant.javaagent" value="/home/billy/workspace/javalanche-0.3.6/lib/invariants-0.1.jar" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="adabu.javaagent" value="/home/billy/workspace/javalanche-0.3.6/lib/adabu2-tracer-0.4-modified.jar" />
+    <property name="prefix" value="edu" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="javalanche.dir" value="/home/billy/workspace/javalanche-0.3.6" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="scan.mutation.javaagent" value="-javaagent:/home/billy/workspace/javalanche-0.3.6/javaagent.jar" />
+    <property name="invariant.checker.file" value="invariant-files//edu-invariant-checkers.ser" />
+    <property name="scan.project.verbose" value="-verbose" />
+    <property name="testsuite" value="edu.gmu.mut.test.AllTests" />
+    <property name="javalanche.mutation.test.listener" value="de.unisb.cs.st.javalanche.mutation.runtime.jmx.JmxMutationTestListener" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-openjdk/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/home/billy/workspace/swe795-tdd/src/edu" />
+    <property name="run.mutations.javalanche.package.prefix" value="-Dmutation.package.prefix=edu" />
+    <property name="line.separator" value="
+" />
+    <property name="adabu.boot.jars" value="/home/billy/workspace/javalanche-0.3.6/lib/adabu2-core-0.4-SNAPSHOT.jar:/home/billy/workspace/javalanche-0.3.6/lib/adabu2-hoare-0.4-SNAPSHOT.jar:/home/billy/workspace/javalanche-0.3.6/lib/adabu2-tracer-0.4-modified.jar:/home/billy/workspace/javalanche-0.3.6/lib/invariants-0.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/asm-all-3.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/commons-collections-3.2.1.jar:/home/billy/workspace/javalanche-0.3.6/lib/commons-io-1.4.jar:/home/billy/workspace/javalanche-0.3.6/lib/log4j-1.2.14.jar:/home/billy/workspace/javalanche-0.3.6/lib/util-0.1.jar" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="scan.mutation.run.mode" value="-Dmutation.run.mode=scan" />
+    <property name="basedir" value="/home/billy/workspace/swe795-tdd/src/edu" />
+    <property name="methods.add" value="" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="scan.project.mutation.run.mode" value="-Dmutation.run.mode=scan-project" />
+    <property name="ant.core.lib" value="/home/billy/programs/eclipse-3.6/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant.jar" />
+    <property name="ant.file.Javalanche - Mutation Testing" value="/home/billy/workspace/swe795-tdd/src/edu/javalanche.xml" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="mutation.result.file" value="result-${mutation.file}" />
+    <property name="run.mutations.mutation.result.file" value="-Dmutation.result.file=result-${mutation.file}" />
+    <property name="javalanche.location" value="/home/billy/workspace/javalanche-0.3.6" />
+    <property name="mutation.jars.dir" value="/home/billy/workspace/javalanche-0.3.6/lib/" />
+    <property name="mutation.base.dir" value="/home/billy/workspace/javalanche-0.3.6" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="run.mutations.javalanche.project.test.suite" value="-Dmutation.test.suite=edu.gmu.mut.test.AllTests" />
+  </properties>
+  <system-out><![CDATA[Running modified JUnit 4 tests
+Junit4MutationTestDriver.Junit4MutationTestDriver()
+Junit4MutationTestDriver.getTestSuiteRunner()
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+Applying 1th mutation with id 2. Running 1 tests
+Applying 2th mutation with id 3. Running 1 tests
+Applying 3th mutation with id 4. Running 1 tests
+Applying 4th mutation with id 5. Running 1 tests
+Applying 5th mutation with id 6. Running 1 tests
+Applying 6th mutation with id 7. Running 1 tests
+Applying 7th mutation with id 8. Running 1 tests
+Applying 8th mutation with id 9. Running 1 tests
+Applying 9th mutation with id 10. Running 5 tests
+Applying 10th mutation with id 11. Running 5 tests
+Applying 11th mutation with id 12. Running 5 tests
+Applying 12th mutation with id 13. Running 5 tests
+Applying 13th mutation with id 14. Running 5 tests
+Applying 14th mutation with id 15. Running 5 tests
+Applying 15th mutation with id 16. Running 5 tests
+Applying 16th mutation with id 17. Running 5 tests
+Applying 17th mutation with id 18. Running 5 tests
+Applying 18th mutation with id 19. Running 5 tests
+Applying 19th mutation with id 20. Running 5 tests
+Applying 20th mutation with id 21. Running 5 tests
+Applying 21th mutation with id 22. Running 5 tests
+Applying 22th mutation with id 23. Running 5 tests
+Applying 23th mutation with id 24. Running 5 tests
+Applying 24th mutation with id 25. Running 5 tests
+Applying 25th mutation with id 26. Running 5 tests
+Applying 26th mutation with id 27. Running 5 tests
+Applying 27th mutation with id 28. Running 5 tests
+Applying 28th mutation with id 29. Running 5 tests
+Applying 29th mutation with id 30. Running 5 tests
+Applying 30th mutation with id 31. Running 5 tests
+Applying 31th mutation with id 32. Running 2 tests
+Applying 32th mutation with id 33. Running 2 tests
+Applying 33th mutation with id 34. Running 2 tests
+Applying 34th mutation with id 35. Running 2 tests
+Applying 35th mutation with id 36. Running 1 tests
+Applying 36th mutation with id 37. Running 1 tests
+Applying 37th mutation with id 38. Running 4 tests
+Applying 38th mutation with id 39. Running 4 tests
+Applying 39th mutation with id 40. Running 4 tests
+Applying 40th mutation with id 41. Running 2 tests
+Applying 41th mutation with id 42. Running 2 tests
+Applying 42th mutation with id 43. Running 2 tests
+Applying 43th mutation with id 44. Running 2 tests
+Applying 44th mutation with id 45. Running 2 tests
+Applying 45th mutation with id 46. Running 1 tests
+Applying 46th mutation with id 47. Running 1 tests
+Applying 47th mutation with id 48. Running 3 tests
+Applying 48th mutation with id 49. Running 3 tests
+Applying 49th mutation with id 50. Running 3 tests
+Applying 50th mutation with id 51. Running 3 tests
+Applying 51th mutation with id 52. Running 1 tests
+Applying 52th mutation with id 53. Running 1 tests
+Applying 53th mutation with id 54. Running 2 tests
+Applying 54th mutation with id 55. Running 2 tests
+Applying 55th mutation with id 56. Running 2 tests
+Applying 56th mutation with id 57. Running 2 tests
+Applying 57th mutation with id 58. Running 1 tests
+Applying 58th mutation with id 59. Running 1 tests
+Applying 59th mutation with id 60. Running 1 tests
+Applying 60th mutation with id 61. Running 1 tests
+Applying 61th mutation with id 62. Running 1 tests
+Applying 62th mutation with id 63. Running 1 tests
+Applying 63th mutation with id 64. Running 1 tests
+Applying 64th mutation with id 65. Running 1 tests
+Applying 65th mutation with id 66. Running 1 tests
+Applying 66th mutation with id 69. Running 1 tests
+Applying 67th mutation with id 70. Running 1 tests
+Applying 68th mutation with id 71. Running 1 tests
+Applying 69th mutation with id 72. Running 1 tests
+Applying 70th mutation with id 73. Running 1 tests
+Applying 71th mutation with id 74. Running 1 tests
+Applying 72th mutation with id 75. Running 1 tests
+Applying 73th mutation with id 76. Running 1 tests
+Applying 74th mutation with id 77. Running 1 tests
+Applying 75th mutation with id 78. Running 1 tests
+Applying 76th mutation with id 79. Running 1 tests
+Applying 77th mutation with id 82. Running 6 tests
+Applying 78th mutation with id 83. Running 6 tests
+Applying 79th mutation with id 84. Running 6 tests
+Applying 80th mutation with id 85. Running 6 tests
+Applying 81th mutation with id 86. Running 6 tests
+Applying 82th mutation with id 87. Running 6 tests
+Applying 83th mutation with id 88. Running 6 tests
+Applying 84th mutation with id 89. Running 5 tests
+Applying 85th mutation with id 90. Running 5 tests
+Applying 86th mutation with id 91. Running 5 tests
+Applying 87th mutation with id 92. Running 5 tests
+Applying 88th mutation with id 93. Running 3 tests
+Applying 89th mutation with id 94. Running 3 tests
+Applying 90th mutation with id 95. Running 3 tests
+Applying 91th mutation with id 96. Running 3 tests
+Applying 92th mutation with id 97. Running 5 tests
+Applying 93th mutation with id 98. Running 5 tests
+Applying 94th mutation with id 99. Running 2 tests
+Applying 95th mutation with id 100. Running 2 tests
+Applying 96th mutation with id 101. Running 2 tests
+Applying 97th mutation with id 102. Running 2 tests
+Applying 98th mutation with id 103. Running 2 tests
+Applying 99th mutation with id 104. Running 2 tests
+Applying 100th mutation with id 105. Running 2 tests
+Applying 101th mutation with id 106. Running 2 tests
+Applying 102th mutation with id 107. Running 2 tests
+Applying 103th mutation with id 108. Running 2 tests
+Applying 104th mutation with id 109. Running 2 tests
+Applying 105th mutation with id 110. Running 2 tests
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+ALL_RESULTS
+All mutations have results - this means they have already been applied and executed
+105 mutations were applied. 105 Mutation results were recorded. 105 Mutations where actually touched.
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+]]></system-out>
+  <system-err><![CDATA[Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.SpikesTest bigDecimalSpike
+INFO: $1.00
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.AccountTest accountInstantiationTest
+INFO: 1/1/11 12:00 AM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest purchaseShouldAddAndReturnCorrectString
+INFO: MUSIC,$0.99,4/1/11 12:00 AM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.DateSpikeTest dateAddTest
+INFO: Apr 5, 2010
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Jazz,$0.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Rock,$9.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Punk,$4.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Jazz,$0.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Rock,$9.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Punk,$4.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Jazz,$0.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Rock,$9.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Punk,$4.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Jazz,$0.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.DateSpikeTest whatDoesOneYearOldLookLike
+INFO: 334
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 50%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 50%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 50%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 50%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 110%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: -90%
+Apr 6, 2011 8:55:52 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 5%
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 5%
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.PurchaseTest purchaseShouldAddAndReturnCorrectString
+INFO: MUSIC,$0.00,4/1/11 12:00 AM
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.PurchaseTest purchaseShouldAddAndReturnCorrectString
+INFO: MUSIC,null,4/1/11 12:00 AM
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.PurchaseTest purchaseShouldAddAndReturnCorrectString
+INFO: MUSIC,$0.99,null
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.PurchaseTest purchaseShouldAddAndReturnCorrectString
+INFO: null
+]]></system-err>
+</testsuite>

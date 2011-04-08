@@ -1,0 +1,103 @@
+<project name="Javalanche - Mutation Testing">
+	
+
+<!-- Properties can either be supplied on the comand line or specified here -->
+<!--
+	<property name="prefix" value="triangle"/>
+	<property name="testsuite" value="triangle.tests.TriangleTestSuite"/>
+	<property name="javalanche" value="C:/Users/sheltonwd/workspace/javalanche-0.3.6"/>
+	<property name="cp" value="lib"/>
+	
+	<jvmarg line="-Djavalanche.junit4=true ${javalanche.arg.line}" />
+	-->
+
+<!-- from website examples -->	
+<property name="prefix" value="edu"/>
+<property name="testsuite" value="edu.gmu.mut.test.AllTests"/>
+<property name="javalanche" value="/home/billy/workspace/javalanche-0.3.6"/>
+<property name="cp" value="/home/billy/workspace/swe795-tdd/bin"/>
+
+<!-- Nothing need to be changed after this line -->
+
+	<property name="project.prefix" value="${prefix}"/>
+	<property name="project.test.suite" value="${testsuite}"/>
+	
+	<!--<property name="javalanche.location" value="/Users/schuler/workspace/mutationTest/" /> -->
+	
+	<property name="javalanche.location" value="${javalanche}" />
+	<property name="javalanche.dist.dir" value="${javalanche}" />
+	
+	<!-- value="${javalanche}/target/javalanche-mutation-0.1-dist.dir/lib/" /-->
+	
+		
+	<import file="${javalanche.location}/import.xml"/>
+	<import file="${javalanche.location}/src/main/resources/invariant-build.xml" />
+	<import file="${javalanche.location}/src/main/resources/mutation-build.xml" />
+	
+	
+	<!-- 
+	Task that is called by the different stages of Javalanche.
+	This task should not be called directly.
+	-->
+	<target name="test-javalanche" depends="setProperties">
+		<mkdir dir="mutation-files/junit-reports"></mkdir>
+		<junit dir="." printSummary="yes" fork="true" forkmode="once" showoutput="true" maxmemory="1024m">
+			<classpath>
+				<path refid="javalanche.classpath.add" />
+				<pathelement path="${cp}"></pathelement>
+			</classpath>
+			<jvmarg line="-Djavalanche.junit4=true ${javalanche.arg.line}" />
+			<!-- 
+			  <jvmarg line="${javalanche.arg.line} ${javalanche.properties.add}" />
+			-->
+			<formatter type="xml"/>
+			<formatter usefile="true" type="plain"/>
+			<test todir="mutation-files/junit-reports" name="${testsuite}" />
+		</junit>
+	</target>	
+
+
+
+<!-- Doesn't look like it's doing anything ... bill s.,04.05.11 -->
+	<target name="setProperties">
+		<condition property="classes.add" value="-Djavalanche.test.classes=${test.classes}" else="">
+			<isset property="test.classes"/>
+		</condition>
+		<condition property="methods.add" value="-Djavalanche.test.methods=${test.methods}" else="">
+			<isset property="test.methods"/>
+		</condition>
+		<property name="javalanche.properties.add" value="${classes.add} ${methods.add}" />
+		
+		<echoproperties />
+		
+	</target>
+
+	
+	<target name="testParameters">
+		<echo>
+			project.prefix     : ${project.prefix} 
+			project.test.suite : ${project.test.suite} 
+			cp                 : ${cp} 
+			javalanche.location: ${javalanche.location}
+			javalanche.dist.dir: ${javalanche.dist.dir}
+		</echo>
+	</target>	
+
+	
+	<target name="mutationTest" depends="startHsql,schemaexport,scanProject,scan,createSingleTask,runSingleTask,analyzeResults,stopHsql"/>
+	
+	<target name="createSingleTask" >
+		<antcall target="createTasksFixed">
+			<param name="javalanche.fixed.number.of.tasks" value="1" />
+		</antcall>
+	</target>
+	
+	<target name="runSingleTask" >
+		<antcall target="runMutations">
+			<param name="single.task.mode" value="true" />
+		</antcall>
+	</target>
+	
+
+
+</project>

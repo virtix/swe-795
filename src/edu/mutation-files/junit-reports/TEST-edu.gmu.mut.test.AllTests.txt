@@ -1,0 +1,216 @@
+Testsuite: edu.gmu.mut.test.AllTests
+Tests run: 0, Failures: 0, Errors: 0, Time elapsed: 7.851 sec
+------------- Standard Output ---------------
+Running modified JUnit 4 tests
+Junit4MutationTestDriver.Junit4MutationTestDriver()
+Junit4MutationTestDriver.getTestSuiteRunner()
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+Applying 1th mutation with id 2. Running 1 tests
+Applying 2th mutation with id 3. Running 1 tests
+Applying 3th mutation with id 4. Running 1 tests
+Applying 4th mutation with id 5. Running 1 tests
+Applying 5th mutation with id 6. Running 1 tests
+Applying 6th mutation with id 7. Running 1 tests
+Applying 7th mutation with id 8. Running 1 tests
+Applying 8th mutation with id 9. Running 1 tests
+Applying 9th mutation with id 10. Running 5 tests
+Applying 10th mutation with id 11. Running 5 tests
+Applying 11th mutation with id 12. Running 5 tests
+Applying 12th mutation with id 13. Running 5 tests
+Applying 13th mutation with id 14. Running 5 tests
+Applying 14th mutation with id 15. Running 5 tests
+Applying 15th mutation with id 16. Running 5 tests
+Applying 16th mutation with id 17. Running 5 tests
+Applying 17th mutation with id 18. Running 5 tests
+Applying 18th mutation with id 19. Running 5 tests
+Applying 19th mutation with id 20. Running 5 tests
+Applying 20th mutation with id 21. Running 5 tests
+Applying 21th mutation with id 22. Running 5 tests
+Applying 22th mutation with id 23. Running 5 tests
+Applying 23th mutation with id 24. Running 5 tests
+Applying 24th mutation with id 25. Running 5 tests
+Applying 25th mutation with id 26. Running 5 tests
+Applying 26th mutation with id 27. Running 5 tests
+Applying 27th mutation with id 28. Running 5 tests
+Applying 28th mutation with id 29. Running 5 tests
+Applying 29th mutation with id 30. Running 5 tests
+Applying 30th mutation with id 31. Running 5 tests
+Applying 31th mutation with id 32. Running 2 tests
+Applying 32th mutation with id 33. Running 2 tests
+Applying 33th mutation with id 34. Running 2 tests
+Applying 34th mutation with id 35. Running 2 tests
+Applying 35th mutation with id 36. Running 1 tests
+Applying 36th mutation with id 37. Running 1 tests
+Applying 37th mutation with id 38. Running 4 tests
+Applying 38th mutation with id 39. Running 4 tests
+Applying 39th mutation with id 40. Running 4 tests
+Applying 40th mutation with id 41. Running 2 tests
+Applying 41th mutation with id 42. Running 2 tests
+Applying 42th mutation with id 43. Running 2 tests
+Applying 43th mutation with id 44. Running 2 tests
+Applying 44th mutation with id 45. Running 2 tests
+Applying 45th mutation with id 46. Running 1 tests
+Applying 46th mutation with id 47. Running 1 tests
+Applying 47th mutation with id 48. Running 3 tests
+Applying 48th mutation with id 49. Running 3 tests
+Applying 49th mutation with id 50. Running 3 tests
+Applying 50th mutation with id 51. Running 3 tests
+Applying 51th mutation with id 52. Running 1 tests
+Applying 52th mutation with id 53. Running 1 tests
+Applying 53th mutation with id 54. Running 2 tests
+Applying 54th mutation with id 55. Running 2 tests
+Applying 55th mutation with id 56. Running 2 tests
+Applying 56th mutation with id 57. Running 2 tests
+Applying 57th mutation with id 58. Running 1 tests
+Applying 58th mutation with id 59. Running 1 tests
+Applying 59th mutation with id 60. Running 1 tests
+Applying 60th mutation with id 61. Running 1 tests
+Applying 61th mutation with id 62. Running 1 tests
+Applying 62th mutation with id 63. Running 1 tests
+Applying 63th mutation with id 64. Running 1 tests
+Applying 64th mutation with id 65. Running 1 tests
+Applying 65th mutation with id 66. Running 1 tests
+Applying 66th mutation with id 69. Running 1 tests
+Applying 67th mutation with id 70. Running 1 tests
+Applying 68th mutation with id 71. Running 1 tests
+Applying 69th mutation with id 72. Running 1 tests
+Applying 70th mutation with id 73. Running 1 tests
+Applying 71th mutation with id 74. Running 1 tests
+Applying 72th mutation with id 75. Running 1 tests
+Applying 73th mutation with id 76. Running 1 tests
+Applying 74th mutation with id 77. Running 1 tests
+Applying 75th mutation with id 78. Running 1 tests
+Applying 76th mutation with id 79. Running 1 tests
+Applying 77th mutation with id 82. Running 6 tests
+Applying 78th mutation with id 83. Running 6 tests
+Applying 79th mutation with id 84. Running 6 tests
+Applying 80th mutation with id 85. Running 6 tests
+Applying 81th mutation with id 86. Running 6 tests
+Applying 82th mutation with id 87. Running 6 tests
+Applying 83th mutation with id 88. Running 6 tests
+Applying 84th mutation with id 89. Running 5 tests
+Applying 85th mutation with id 90. Running 5 tests
+Applying 86th mutation with id 91. Running 5 tests
+Applying 87th mutation with id 92. Running 5 tests
+Applying 88th mutation with id 93. Running 3 tests
+Applying 89th mutation with id 94. Running 3 tests
+Applying 90th mutation with id 95. Running 3 tests
+Applying 91th mutation with id 96. Running 3 tests
+Applying 92th mutation with id 97. Running 5 tests
+Applying 93th mutation with id 98. Running 5 tests
+Applying 94th mutation with id 99. Running 2 tests
+Applying 95th mutation with id 100. Running 2 tests
+Applying 96th mutation with id 101. Running 2 tests
+Applying 97th mutation with id 102. Running 2 tests
+Applying 98th mutation with id 103. Running 2 tests
+Applying 99th mutation with id 104. Running 2 tests
+Applying 100th mutation with id 105. Running 2 tests
+Applying 101th mutation with id 106. Running 2 tests
+Applying 102th mutation with id 107. Running 2 tests
+Applying 103th mutation with id 108. Running 2 tests
+Applying 104th mutation with id 109. Running 2 tests
+Applying 105th mutation with id 110. Running 2 tests
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+ALL_RESULTS
+All mutations have results - this means they have already been applied and executed
+105 mutations were applied. 105 Mutation results were recorded. 105 Mutations where actually touched.
+MutationsForRun.findFile() /home/billy/workspace/swe795-tdd/src/edu/mutation-files/mutation-task-edu-01.txt
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.SpikesTest bigDecimalSpike
+INFO: $1.00
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.AccountTest accountInstantiationTest
+INFO: 1/1/11 12:00 AM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest purchaseShouldAddAndReturnCorrectString
+INFO: MUSIC,$0.99,4/1/11 12:00 AM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.DateSpikeTest dateAddTest
+INFO: Apr 5, 2010
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Jazz,$0.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Rock,$9.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Punk,$4.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Jazz,$0.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Rock,$9.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Punk,$4.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Jazz,$0.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Rock,$9.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Punk,$4.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.PurchaseTest createArbitraryPurchases
+INFO: Jazz,$0.99,4/6/11 8:55 PM
+Apr 6, 2011 8:55:50 PM edu.gmu.mut.test.DateSpikeTest whatDoesOneYearOldLookLike
+INFO: 334
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 50%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 50%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 50%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 50%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 110%
+Apr 6, 2011 8:55:51 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: -90%
+Apr 6, 2011 8:55:52 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 10%
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 5%
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.LoyaltyTest discountForBasicUserShouldBe10Percent
+INFO: 5%
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.PurchaseTest purchaseShouldAddAndReturnCorrectString
+INFO: MUSIC,$0.00,4/1/11 12:00 AM
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.PurchaseTest purchaseShouldAddAndReturnCorrectString
+INFO: MUSIC,null,4/1/11 12:00 AM
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.PurchaseTest purchaseShouldAddAndReturnCorrectString
+INFO: MUSIC,$0.99,null
+Apr 6, 2011 8:55:53 PM edu.gmu.mut.test.PurchaseTest purchaseShouldAddAndReturnCorrectString
+INFO: null
+------------- ---------------- ---------------
+

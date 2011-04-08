@@ -75,7 +75,7 @@ public class Account {
 	private Account(){}
 	
 	/**
-	 * New instance.
+	 * Static factory method for creating new instances of Account objects
 	 *
 	 * @param name the name
 	 * @param email the email
