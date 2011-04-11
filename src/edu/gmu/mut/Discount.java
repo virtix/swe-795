@@ -1,13 +1,16 @@
 package edu.gmu.mut;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Calendar;
+
+import org.mockito.internal.stubbing.answers.ThrowsException;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Interface Discount.
  */
-public abstract class Discount {
+public class Discount {
 
 	/**
 	 * Gets the discount.
@@ -16,9 +19,8 @@ public abstract class Discount {
 	 * @param startDate the start date
 	 * @return the discount
 	 */
-	public static BigDecimal getDiscount(Account account, Calendar startDate){
-		new Throwable("This method should be overridden.");
-		return null;
+	public static BigDecimal getDiscount(Account account, Calendar startDate) {
+		throw new RuntimeException();
 	}
 
 	/**
@@ -29,7 +31,9 @@ public abstract class Discount {
 	 */
 	public static BigDecimal getTotalPurchases(Account account) {
 		BigDecimal total = new BigDecimal(0);
-		for(Purchase p : account.getPurchaseHistory()){
+		ArrayList purchases = account.getPurchaseHistory();
+		for(int i = 0; i < purchases.size(); i++){
+			Purchase p = (Purchase)purchases.get(i);
 			total = p.price.add(total);
 		}
 		return total;

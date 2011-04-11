@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=${charset}"/>
+
+        <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <style type="text/css" media="screen">
+        @import url('style.css');
+        @import url('roundedcorners.css');
+        @import url('tree.css');
+            </style>
+    
+    <title>Clover</title>
+</head><body onload="setBrowserTitle('${headerTitle}: Dashboard')" style="min-width:200px">
+
+        
+<table cellspacing="0" cellpadding="0" class="barGraph">
+
+<tr valign="top">
+
+    <td class="hbreak" colspan="1">
+                <div class="tags roundedLarge" style="padding: 5px;">
+            <b class="ctop $cnrclass"><b class="cb1"></b><b class="cb2"></b><b class="cb3"></b><b class="cb4"></b></b>
+        <div class="roundedContent" style="padding: 5px;">
+                
+            <label class="titleText link" onkeyup="return help_dash_coverage;" onclick="self.location='cloverview:coverage'">Coverage</label><span> 9 classes, 144 / 220 elements</span>
+            <table><tr><td>65.5%
+</td>
+<td class="graphBar " align="center">
+<span class="sortValue">0.6545454</span>
+<div>
+    <div style="width: 200px; font-size:0px;"></div>
+    <div title="34.5% Not Covered"  style="min-width: 200px;"  class="barNegative ">
+       <div title="65.5% Covered" class="barPositive " style="width: 65.5%"></div>
+    </div>
+</div></td></tr></table>
+                </div>
+            <b class="cbottom"><b class="cb4"></b><b class="cb3"></b><b class="cb2"></b><b class="cb1"></b></b>
+        </div>
+    
+                <div class="tags roundedLarge" style="padding: 5px;">
+            <b class="ctop $cnrclass"><b class="cb1"></b><b class="cb2"></b><b class="cb3"></b><b class="cb4"></b></b>
+        <div class="roundedContent" style="padding: 5px;">
+                                        <label class="titleText link" onkeyup="return help_dash_test_results;" onclick="self.location='cloverview:testresults'">Test Results</label>
+                <span> <span class="red">73 / 75</span> tests 0.15 secs</span>
+            <table>
+                                <tr>
+                    <td>97.3%</td>
+                    <td style="width:200px">
+                                                
+
+<div>
+    <div style="width: 40px; font-size:0px;"></div>
+
+    <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+        <div title="2.7% of Tests Failed" class="testBarFail" style="width: 100%">
+            <div title="97.3% of Tests Passed" class="testBarPass" style="width: 97.3%"></div>
+        </div>
+    </div>
+</div>                    </td>
+                </tr>
+                            </table>
+                </div>
+            <b class="cbottom"><b class="cb4"></b><b class="cb3"></b><b class="cb2"></b><b class="cb1"></b></b>
+        </div>
+    
+        
+        
+                <div class="tags roundedLarge" style="padding: 5px;">
+            <b class="ctop $cnrclass"><b class="cb1"></b><b class="cb2"></b><b class="cb3"></b><b class="cb4"></b></b>
+        <div class="roundedContent" style="padding: 5px;">
+            <label class="titleText link" onkeyup="return help_dash_packages;" onclick="self.location='cloverview:coverage'">Most Complex Packages</label>
+        
+        <table>
+                    
+                        <tr><td>1. </td><td>100%
+</td>
+<td class="graphBar " align="center">
+<span class="sortValue">1.0</span>
+<div>
+    <div style="width: 40px; font-size:0px;"></div>
+    <div title="0% Not Covered"  style="min-width: 40px;"  class="barNegative ">
+       <div title="100% Covered" class="barPositive " style="width: 100%"></div>
+    </div>
+</div></td><td><a class="tag" href="javapkg:edu.gmu.mut">edu.gmu.mut</a> (31)</td></tr>
+                    
+                        <tr><td>2. </td><td>34.5%
+</td>
+<td class="graphBar " align="center">
+<span class="sortValue">0.3448276</span>
+<div>
+    <div style="width: 40px; font-size:0px;"></div>
+    <div title="65.5% Not Covered"  style="min-width: 40px;"  class="barNegative ">
+       <div title="34.5% Covered" class="barPositive " style="width: 34.5%"></div>
+    </div>
+</div></td><td><a class="tag" href="javapkg:edu.gmu.mut.test">edu.gmu.mut.test</a> (17)</td></tr>
+                </table>
+                </div>
+            <b class="cbottom"><b class="cb4"></b><b class="cb3"></b><b class="cb2"></b><b class="cb1"></b></b>
+        </div>
+                    <div class="tags roundedLarge" style="padding: 5px;">
+            <b class="ctop $cnrclass"><b class="cb1"></b><b class="cb2"></b><b class="cb3"></b><b class="cb4"></b></b>
+        <div class="roundedContent" style="padding: 5px;">
+            <label class="titleText link" onkeyup="return help_dash_classes;" onclick="self.location='cloverview:coverage'">Most Complex Classes</label>
+        <table>
+                    
+                        <tr><td>1. </td><td>100%
+</td>
+<td class="graphBar " align="center">
+<span class="sortValue">1.0</span>
+<div>
+    <div style="width: 40px; font-size:0px;"></div>
+    <div title="0% Not Covered"  style="min-width: 40px;"  class="barNegative ">
+       <div title="100% Covered" class="barPositive " style="width: 100%"></div>
+    </div>
+</div></td><td>
+                    <a  class="tag" href="javaclass:/edu/gmu/mut/LoyaltyDiscount.java#14_20"  title="edu.gmu.mut.LoyaltyDiscount">LoyaltyDiscount</a>
+                (14)
+            </td></tr>
+                    
+                        <tr><td>2. </td><td>0%
+</td>
+<td class="graphBar " align="center">
+<span class="sortValue">0.0</span>
+<div>
+    <div style="width: 40px; font-size:0px;"></div>
+    <div title="100% Not Covered"  style="min-width: 40px;"  class="barNegative ">
+       <div title="0% Covered" class="barPositive " style="width: 0%"></div>
+    </div>
+</div></td><td>
+                    <a  class="tag" href="javaclass:/edu/gmu/mut/test/MutationTheory.java#23_14"  title="edu.gmu.mut.test.MutationTheory">MutationTheory</a>
+                (11)
+            </td></tr>
+                    
+                        <tr><td>3. </td><td>100%
+</td>
+<td class="graphBar " align="center">
+<span class="sortValue">1.0</span>
+<div>
+    <div style="width: 40px; font-size:0px;"></div>
+    <div title="0% Not Covered"  style="min-width: 40px;"  class="barNegative ">
+       <div title="100% Covered" class="barPositive " style="width: 100%"></div>
+    </div>
+</div></td><td>
+                    <a  class="tag" href="javaclass:/edu/gmu/mut/Account.java#9_14"  title="edu.gmu.mut.Account">Account</a>
+                (7)
+            </td></tr>
+                    
+                        <tr><td>4. </td><td>100%
+</td>
+<td class="graphBar " align="center">
+<span class="sortValue">1.0</span>
+<div>
+    <div style="width: 40px; font-size:0px;"></div>
+    <div title="0% Not Covered"  style="min-width: 40px;"  class="barNegative ">
+       <div title="100% Covered" class="barPositive " style="width: 100%"></div>
+    </div>
+</div></td><td>
+                    <a  class="tag" href="javaclass:/edu/gmu/mut/Discount.java#13_14"  title="edu.gmu.mut.Discount">Discount</a>
+                (4)
+            </td></tr>
+                    
+                        <tr><td>5. </td><td>100%
+</td>
+<td class="graphBar " align="center">
+<span class="sortValue">1.0</span>
+<div>
+    <div style="width: 40px; font-size:0px;"></div>
+    <div title="0% Not Covered"  style="min-width: 40px;"  class="barNegative ">
+       <div title="100% Covered" class="barPositive " style="width: 100%"></div>
+    </div>
+</div></td><td>
+                    <a  class="tag" href="javaclass:/edu/gmu/mut/GenreDiscount.java#7_14"  title="edu.gmu.mut.GenreDiscount">GenreDiscount</a>
+                (4)
+            </td></tr>
+                </table>
+
+                </div>
+            <b class="cbottom"><b class="cb4"></b><b class="cb3"></b><b class="cb2"></b><b class="cb1"></b></b>
+        </div>
+    
+                <div class="tags roundedLarge" style="padding: 5px;">
+            <b class="ctop $cnrclass"><b class="cb1"></b><b class="cb2"></b><b class="cb3"></b><b class="cb4"></b></b>
+        <div class="roundedContent" style="padding: 5px;">
+                <label class="titleText link" onkeyup="return help_dash_risks;" onclick="self.location='cloverview:toprisks'">Top 3 Project Risks</label>
+            <div>
+            
+                                           <a class="tag" href="javaclass:/edu/gmu/mut/test/MutationTheory.java#23_14"
+               style="font-size: 25px;color:#e4051a"
+               title="Average Method Complexity - 1 , Coverage - 0% ">MutationTheory</a>
+                          
+                                           <a class="tag" href="javaclass:/edu/gmu/mut/test/AccountFixture.java#11_14"
+               style="font-size: 25px;color:#3405ca"
+               title="Average Method Complexity - 1 , Coverage - 75% ">AccountFixture</a>
+                          
+                                           <a class="tag" href="javaclass:/edu/gmu/mut/test/AllTests.java#18_14"
+               style="font-size: 9px;color:#0205fc"
+               title="Average Method Complexity - 0 , Coverage -  -  ">AllTests</a>
+                                      </div>
+                </div>
+            <b class="cbottom"><b class="cb4"></b><b class="cb3"></b><b class="cb2"></b><b class="cb1"></b></b>
+        </div>
+    
+        
+
+                        <div class="tags roundedLarge" style="padding: 5px;">
+            <b class="ctop $cnrclass"><b class="cb1"></b><b class="cb2"></b><b class="cb3"></b><b class="cb4"></b></b>
+        <div class="roundedContent" style="padding: 5px;">
+                <label class="titleText link" onkeyup="return help_dash_untested_methods;" onclick="self.location='cloverview:quickwins'">Least Tested Methods</label>
+            <table>
+                
+                <tr>
+                    <td align="right">1.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="AccountFixture.get100DollarSpenderAccount()&nbsp;:&nbsp;Account" href="javamethod:/edu/gmu/mut/test/AccountFixture.java#14_2">AccountFixture.get100DollarSpenderAccount(<wbr>)<wbr>&nbsp;:&nbsp;Account</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">2.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.testLoyaltyDiscount(Object[])&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#54_2">MutationTheory.testLoyaltyDiscount(<wbr>Object[])<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">3.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.test15()&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#121_3">MutationTheory.test15(<wbr>)<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">4.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.test14()&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#113_3">MutationTheory.test14(<wbr>)<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">5.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.test17()&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#131_3">MutationTheory.test17(<wbr>)<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">6.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.test20()&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#143_3">MutationTheory.test20(<wbr>)<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">7.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.test21()&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#151_3">MutationTheory.test21(<wbr>)<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">8.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.test22()&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#159_3">MutationTheory.test22(<wbr>)<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">9.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.test26()&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#167_2">MutationTheory.test26(<wbr>)<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">10.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.test25()&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#203_3">MutationTheory.test25(<wbr>)<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">11.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.test23()&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#191_3">MutationTheory.test23(<wbr>)<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">12.</td>
+                    <td align="right">0%</td>
+                    <td style="padding-left:25px; text-indent:-25px;">                      <a class="tag" title="MutationTheory.test24()&nbsp;:&nbsp;void" href="javamethod:/edu/gmu/mut/test/MutationTheory.java#197_3">MutationTheory.test24(<wbr>)<wbr>&nbsp;:&nbsp;void</a> (1)
+                    </td>
+                </tr>
+                            </table>
+                </div>
+            <b class="cbottom"><b class="cb4"></b><b class="cb3"></b><b class="cb2"></b><b class="cb1"></b></b>
+        </div>
+            
+    </td>
+</tr>
+
+<script type="text/javascript" src="jit.js" ></script>
+</body>
+
+</html>

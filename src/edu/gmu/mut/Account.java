@@ -21,7 +21,7 @@ public class Account {
 	private Calendar dateRegistered;
 	
 	/** The purchase history. */
-	private ArrayList<Purchase> purchaseHistory;
+	private ArrayList purchaseHistory;
 
 	/**
 	 * Gets the name.
@@ -64,7 +64,7 @@ public class Account {
 	 *
 	 * @return the purchase history
 	 */
-	public ArrayList<Purchase> getPurchaseHistory() {
+	public ArrayList getPurchaseHistory() {
 		return purchaseHistory;
 	}
 
@@ -92,6 +92,12 @@ public class Account {
 		accnt.dateOfLastVisit = lastVisitDate;
 		accnt.purchaseHistory = purchases;
 		return accnt;
+	}
+	
+	
+	public String toString(){
+		return this.name + ", " + this.email  + ", " + this.getPurchaseHistory().toString(); 
+		
 	}
 
 }

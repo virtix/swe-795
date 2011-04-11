@@ -25,12 +25,12 @@ public class Purchase {
 	 *
 	 * @param item the item
 	 * @param price the price
-	 * @param purchaseDate the purchase date
+	 * @param marchDate the purchase date
 	 */
-	public Purchase(String item, BigDecimal price, GregorianCalendar purchaseDate ) {
+	public Purchase(String item, BigDecimal price, Calendar marchDate ) {
 		this.item = item;
 		this.price = price;
-		this.purchaseDate = purchaseDate;
+		this.purchaseDate = marchDate;
 	}
 	
 	/* (non-Javadoc)

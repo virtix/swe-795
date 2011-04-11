@@ -12,11 +12,6 @@ import java.util.GregorianCalendar;
 
 public class SpikesTest extends BaseTest {
 
-	NumberFormat curFmt = NumberFormat.getCurrencyInstance();
-	NumberFormat perFmt = NumberFormat.getPercentInstance();
-	Calendar today = new GregorianCalendar( 2011, Calendar.APRIL, 1 );
-	
-	
 	@Test
 	public void calcDayDelta(){
 		Calendar regDate = new GregorianCalendar( 2010, Calendar.MAY, 5 );

@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import edu.gmu.mut.Account;
 import edu.gmu.mut.Discount;
-import edu.gmu.mut.GenreDiscount;
 import edu.gmu.mut.LoyaltyDiscount;
 import edu.gmu.mut.Purchase;
 
@@ -18,13 +17,7 @@ import java.util.GregorianCalendar;
 
 public class LoyaltyDiscountTest extends BaseTest {
 
-	NumberFormat curFmt = NumberFormat.getCurrencyInstance();
-	NumberFormat perFmt = NumberFormat.getPercentInstance();
-	Calendar today = new GregorianCalendar( 2011, Calendar.APRIL, 1 );
-	
-	
-	
-	 @Test
+	@Test
 	 public void loyaltyDiscountShouldBeOfTypeDiscount(){
 		 //refactoring, defining new type Discount
 		 Discount discount = new LoyaltyDiscount();
@@ -91,5 +84,6 @@ public class LoyaltyDiscountTest extends BaseTest {
 		String result = curFmt.format(amt.doubleValue()) ; 
 		assertEquals( "$67.86" , result  );
 	}
+	
 
 }

@@ -15,7 +15,7 @@ public class AccountFixture {
 		Calendar regDate;
 		Calendar visitDate;
 		ArrayList<Purchase> purchases ;
-		purchases = new ArrayList<Purchase>();
+		purchases = new ArrayList();
 		Purchase p = new Purchase("Blues", new BigDecimal(100.00), new GregorianCalendar(2010,Calendar.NOVEMBER,24));
 		purchases.add(p);
 		regDate = new GregorianCalendar(2011,Calendar.MARCH,15);
@@ -27,7 +27,7 @@ public class AccountFixture {
 		Calendar regDate;
 		Calendar visitDate;
 		ArrayList<Purchase> purchases ;
-		purchases = new ArrayList<Purchase>();
+		purchases = new ArrayList();
 		regDate = new GregorianCalendar(2011,Calendar.MARCH,15);
 		visitDate = new GregorianCalendar(2011,Calendar.MARCH,20);
 		return Account.newInstance("new bill", "new_bill@if.io", regDate, visitDate, purchases );
@@ -39,7 +39,7 @@ public class AccountFixture {
 		Calendar regDate;
 		Calendar visitDate;
 		ArrayList<Purchase> purchases ;
-		purchases = new ArrayList<Purchase>();
+		purchases = new ArrayList();
 		purchases.add( new Purchase("Reggae", new BigDecimal( .99), new GregorianCalendar(2011, Calendar.MARCH, 5)  ));
 		purchases.add( new Purchase("Reggae", new BigDecimal( 1.99), new GregorianCalendar(2011, Calendar.MARCH, 5)  ));
 		purchases.add( new Purchase("Jazz", new BigDecimal( 9.99), new GregorianCalendar(2011, Calendar.JANUARY, 5)  ));

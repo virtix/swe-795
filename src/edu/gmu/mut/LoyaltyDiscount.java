@@ -1,6 +1,7 @@
 package edu.gmu.mut;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 
@@ -75,8 +76,10 @@ public final class LoyaltyDiscount extends Discount {
 	 */
 	public static BigDecimal getTotalPurchasesBetweenNowAndNDays( Account account, Calendar today, int numberOfDays) {
 		BigDecimal total = new BigDecimal(0);	
-		for(Purchase p : account.getPurchaseHistory()){
-			 if (computeDeltaDays(today, p.purchaseDate) <= numberOfDays )total = p.price.add(total);
+		ArrayList purchases = account.getPurchaseHistory(); 
+		for(int i = 0; i < purchases.size(); i++ ){
+			Purchase purcahse = (Purchase)purchases.get(i);
+			if (computeDeltaDays(today, purcahse.purchaseDate) <= numberOfDays )total = purcahse.price.add(total);
 		}
 		return total;
 	}

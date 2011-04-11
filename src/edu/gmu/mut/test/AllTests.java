@@ -10,7 +10,10 @@ import  org.junit.runners.Suite;
 					   LoyaltyDiscountTest.class,
 					   SpikesTest.class,
 					   DateSpikeTest.class,
-					   GenreDiscountTest.class
+					   GenreDiscountTest.class,
+					   DiscountTest.class,
+					   MutationGeneratedParameterizedTestsForLoyaltyTest.class,
+					   MutationGeneratedParameterizedTestsForLoyaltyCalendarTest.class
 					  } )
 					  
 public class AllTests {}
