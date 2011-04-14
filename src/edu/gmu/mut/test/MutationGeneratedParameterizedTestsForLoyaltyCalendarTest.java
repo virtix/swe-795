@@ -3,7 +3,6 @@ package edu.gmu.mut.test;
 import static org.junit.Assert.assertEquals;
 
 import java.math.BigDecimal;
-import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -11,15 +10,11 @@ import java.util.Collection;
 import java.util.GregorianCalendar;
 
 import org.junit.Test;
-import org.junit.experimental.theories.DataPoints;
-import org.junit.experimental.theories.Theories;
-import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 import edu.gmu.mut.Account;
-import edu.gmu.mut.GenreDiscount;
 import edu.gmu.mut.LoyaltyDiscount;
 import edu.gmu.mut.Purchase;
 
@@ -65,12 +60,7 @@ static String genre = "Reggae";
 	 * @param purchaseAmt the purchase amt
 	 * @param expectedDiscount the expected discount
 	 */
-	public MutationGeneratedParameterizedTestsForLoyaltyCalendarTest(Calendar today, 
-																	 Calendar regDate,
-																	 Calendar visitDate,
-																	 Calendar purchaseDate,
-																	 BigDecimal purchaseAmt,
-																	 String expectedDiscount  ){
+	public MutationGeneratedParameterizedTestsForLoyaltyCalendarTest(Calendar today, Calendar regDate,Calendar visitDate,Calendar purchaseDate, BigDecimal purchaseAmt, String expectedDiscount ){
 		
 		this.today=today;
 		this.regDate=regDate;
@@ -118,8 +108,8 @@ static String genre = "Reggae";
 	public static Collection<Object[]> getAccountData(){
 		return  Arrays.asList(  new Object[][]  {
 				//today,   regDate,  visitDate, purchaseDate, purchaseAmt,  expected discount
-				{APRIL_6,  MARCH_1,  MARCH_20,  MARCH_5,      bd10,         "5%" },    //??
-				{APRIL_6,  MARCH_1,  MARCH_20,  MARCH_5,      bd5,          "10%" },   //test 14 
+				{APRIL_6,  MARCH_1,  MARCH_20,  MARCH_5,      bd10,         "5%" },     //??
+				{APRIL_6,  MARCH_1,  MARCH_20,  MARCH_5,      bd5,          "10%" },    //test 14 
 				{APRIL_6,  MARCH_31, MARCH_20,  MARCH_5_2010, bd5,          "15%" },    //should be exception
 				{APRIL_6,  MARCH_31, MARCH_20,  MARCH_5_2010, bd5,          "15%" },    //should be exception
 				{APRIL_6,  MARCH_1,  MARCH_20,  MARCH_5_2010, bd5,          "50%" },    //should be exception
@@ -127,7 +117,7 @@ static String genre = "Reggae";
 				{APRIL_6,  MARCH_6,  MARCH_20,  MARCH_5_2010, bd5,          "15%" },    //test 17 ROR_13
 				{APRIL_6,  MARCH_1,  MARCH_20,  MARCH_5_2010, bd10,         "5%"  },    //test 17 ROR_13
 				{APRIL_6,  MARCH_1,  APRIL_2,   MARCH_5,      bd10,         "5%"  },    //test 21 ROR_34
-				{APRIL_6,  MARCH_1,  MARCH_30,  MARCH_5,      bd11,         "10%"  },    //test 22 ROR_38
+				{APRIL_6,  MARCH_1,  MARCH_30,  MARCH_5,      bd11,         "10%"  },   //test 22 ROR_38
 				{APRIL_6,  MARCH_6,  APRIL_2,   MARCH_5,      bd10,         "5%"  },    //test 22 ROR_38
 		});
 	}	
